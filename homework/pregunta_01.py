@@ -70,7 +70,7 @@ def pregunta_01():
     return dataframe
 
 
-  def _normalize_keywords(value):
+def _normalize_keywords(value):
     value = value.strip().rstrip(".")
     value = re.sub(r"\s+", " ", value)
     value = re.sub(r"\s*,\s*", ", ", value)
